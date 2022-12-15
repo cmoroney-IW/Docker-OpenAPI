@@ -1,0 +1,72 @@
+{
+  "info": {
+    "_postman_id": "1ff32d6b-19ee-4ccb-a418-97f0ce0bf2f5",
+    "name": "Current Account",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24665522"
+  },
+  "item": [
+    {
+      "name": "GET current account information",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/BIAN-3/BIAN/CurrentAccount/11.0.0/CurrentAccount/:currentAccountID/Retrieve",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": [
+            "BIAN-3",
+            "BIAN",
+            "CurrentAccount",
+            "11.0.0",
+            "CurrentAccount",
+            ":currentAccountID",
+            "Retrieve"
+          ],
+          "variable": [
+            {
+              "key": "currentAccountID",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET current account lien information",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/BIAN-3/BIAN/CurrentAccount/11.0.0/CurrentAccount/:currentaccountid/AccountLien/:accountlienid/Retrieve",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": [
+            "BIAN-3",
+            "BIAN",
+            "CurrentAccount",
+            "11.0.0",
+            "CurrentAccount",
+            ":currentaccountid",
+            "AccountLien",
+            ":accountlienid",
+            "Retrieve"
+          ],
+          "variable": [
+            {
+              "key": "currentaccountid",
+              "value": null
+            },
+            {
+              "key": "accountlienid",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
