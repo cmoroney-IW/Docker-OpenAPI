@@ -1,0 +1,10 @@
+version: "2"
+services:
+  openapi-docker:
+    container_name: openapi-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "openapi-docker"
+    ports:
+      - "8080:8080"
